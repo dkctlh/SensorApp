@@ -82,7 +82,7 @@ public class MainActivity extends Activity {
        } else if(lightValues == 0 && (accValueX > 1 && accValueY > 1)){
            result.setText("Telefon Cepte Hareketli");
 
-       }else if(lightValues == 0 && (accValueX > 1 && accValueY < 1)){
+       }else if(lightValues == 0 && (accValueX < 1 && accValueY < 1)){
            result.setText("Telefon Cepte Hareketsiz");
 
        }
