@@ -82,9 +82,6 @@ public class MainActivity extends Activity {
        } else if(lightValues == 0 && (accValueX > 1 && accValueY > 1)){
            result.setText("Telefon Cepte Hareketli");
 
-       }else if(lightValues == 0 && (accValueX < 1 && accValueY < 1)){
-           result.setText("Telefon Cepte Hareketsiz");
-
        }
        Intent intent=new Intent();
        ComponentName cn=new ComponentName("com.example.musicapp","com.example.musicapp.BroadcastReciever");
