@@ -76,11 +76,14 @@ public class MainActivity extends Activity {
            result.setText("Telefon Hareketli");
 
        }
-       else if(lightValues == 0 && (accValueX < 1 && accValueY <1)){
+       else if(lightValues < 20 && (accValueX < 1 && accValueY <1)){
            result.setText("Telefon Masada");
 
        } else if(lightValues == 0 && (accValueX > 1 && accValueY > 1)){
            result.setText("Telefon Cepte Hareketli");
+
+       } else if(lightValues == 0 && (accValueX > 1 && accValueY > 1)){
+           result.setText("Telefon Cepte Hareketsiz");
 
        }
        Intent intent=new Intent();
